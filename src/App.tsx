@@ -5,7 +5,7 @@ import "./i18n";
 
 function App() {
   return (
-    <Router>
+    <Router basename="/FreelancePlatform">
       <ScrollToTop />
       <AppRoutes />
     </Router>
