@@ -1,0 +1,38 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+    --primary: #3459e6;
+    --primary-dark: #2a47b8;
+    --background-light: #f8fafc;
+    --text-primary: #1e293b;
+    --text-secondary: #64748b;
+}
+
+body {
+    background-color: var(--background-light);
+    color: var(--text-primary);
+}
+
+@layer components {
+    .gradient-bg {
+        background: linear-gradient(135deg, #3459e6 0%, #6366f1 100%);
+    }
+
+    .card {
+        @apply bg-white rounded-xl shadow-sm border border-gray-100 hover:shadow-md transition-shadow;
+    }
+
+    .heading-xl {
+        @apply text-4xl font-bold tracking-tight;
+    }
+
+    .heading-lg {
+        @apply text-3xl font-semibold;
+    }
+
+    .text-gradient {
+        @apply bg-clip-text text-transparent bg-gradient-to-r from-primary to-indigo-500;
+    }
+}
